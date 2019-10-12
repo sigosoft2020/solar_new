@@ -1,0 +1,180 @@
+[03-Dec-2018 15:18:53 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/works/public_html/businessna1/application/models/M_android.php on line 10
+[03-Dec-2018 16:34:27 Asia/Kolkata] PHP Fatal error:  Call to undefined method Common::insertimage() in /home/works/public_html/businessna1/application/controllers/Android/Android_register.php on line 84
+[05-Dec-2018 12:28:51 Asia/Kolkata] PHP Fatal error:  Call to a member function get_vendors() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 14
+[06-Dec-2018 12:15:56 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getTodaysdealProduct() in /home/works/public_html/businessna1/application/controllers/Vendor/Todaysdeal.php on line 19
+[06-Dec-2018 13:41:34 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Todaysdeal::add() in /home/works/public_html/businessna1/application/controllers/Vendor/Todaysdeal.php on line 37
+[07-Dec-2018 10:01:46 Asia/Kolkata] PHP Fatal error:  Call to undefined method Common::get_deals() in /home/works/public_html/businessna1/application/controllers/Vendor/Todaysdeal.php on line 20
+[07-Dec-2018 10:01:47 Asia/Kolkata] PHP Fatal error:  Call to undefined method Common::get_deals() in /home/works/public_html/businessna1/application/controllers/Vendor/Todaysdeal.php on line 20
+[07-Dec-2018 10:21:27 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::gettodaysDeal() in /home/works/public_html/businessna1/application/models/M_admin.php on line 99
+[08-Dec-2018 11:23:55 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/works/public_html/businessna1/application/views/site/site_product.php on line 655
+[08-Dec-2018 11:24:42 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/works/public_html/businessna1/application/views/site/site_product.php on line 656
+[08-Dec-2018 11:25:06 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '}' in /home/works/public_html/businessna1/application/views/site/site_product.php on line 101
+[10-Dec-2018 15:09:41 Asia/Kolkata] PHP Fatal error:  Call to a member function getOfferPercentage() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Item.php on line 70
+[10-Dec-2018 15:47:14 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 17
+[10-Dec-2018 15:47:29 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 17
+[10-Dec-2018 15:47:40 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 17
+[10-Dec-2018 15:47:49 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 17
+[10-Dec-2018 16:01:14 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 18
+[11-Dec-2018 14:17:22 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductStock() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_cart.php on line 158
+[11-Dec-2018 14:18:21 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductStock() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_cart.php on line 158
+[11-Dec-2018 14:18:59 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductStock() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_cart.php on line 158
+[11-Dec-2018 14:19:54 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductStock() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_cart.php on line 158
+[11-Dec-2018 15:32:13 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductStock() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_cart.php on line 158
+[11-Dec-2018 15:33:06 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductStock() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_cart.php on line 158
+[11-Dec-2018 15:44:29 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductStock() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_cart.php on line 158
+[12-Dec-2018 16:52:20 Asia/Kolkata] PHP Fatal error:  Call to undefined method Android_PlaceOrder::getCartData() in /home/works/public_html/businessna1/application/controllers/Android/Android_PlaceOrder.php on line 46
+[12-Dec-2018 17:00:08 Asia/Kolkata] PHP Fatal error:  Call to a member function getCartData() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_PlaceOrder.php on line 46
+[13-Dec-2018 10:01:25 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/works/public_html/businessna1/application/views/site/product_details.php on line 835
+[15-Dec-2018 10:02:45 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on array in /home/works/public_html/businessna1/application/controllers/Android/Android_products.php on line 34
+[17-Dec-2018 14:35:23 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::get_price() in /home/works/public_html/businessna1/application/controllers/Vendor/Offer.php on line 40
+[19-Dec-2018 11:47:04 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 84
+[19-Dec-2018 11:47:22 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 84
+[19-Dec-2018 11:47:54 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 84
+[19-Dec-2018 12:03:13 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductImage() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_ProductByVendors.php on line 90
+[21-Dec-2018 14:01:18 Asia/Kolkata] PHP Fatal error:  Call to undefined method Android_PlaceOrder::getCartData() in /home/works/public_html/businessna1/application/controllers/Android/Android_PlaceOrder.php on line 49
+[21-Dec-2018 14:02:00 Asia/Kolkata] PHP Fatal error:  Call to a member function row() on string in /home/works/public_html/businessna1/application/controllers/Android/Android_PlaceOrder.php on line 71
+[21-Dec-2018 14:05:31 Asia/Kolkata] PHP Fatal error:  Call to a member function row() on string in /home/works/public_html/businessna1/application/controllers/Android/Android_PlaceOrder.php on line 71
+[24-Dec-2018 13:56:26 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/works/public_html/businessna1/application/controllers/Backend/Vendors.php on line 134
+[24-Dec-2018 14:08:21 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/works/public_html/businessna1/application/controllers/Backend/Vendors.php on line 134
+[24-Dec-2018 14:08:23 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/works/public_html/businessna1/application/controllers/Backend/Vendors.php on line 134
+[26-Dec-2018 14:34:10 Asia/Kolkata] PHP Fatal error:  Call to a member function getFeaturedProductsDetails() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Checkout.php on line 15
+[26-Dec-2018 14:46:26 Asia/Kolkata] PHP Fatal error:  Call to a member function getFeaturedProductsDetails() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Wishlist.php on line 15
+[28-Dec-2018 10:59:19 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getCartData() in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 21
+[28-Dec-2018 11:42:21 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getOfferPercentage() in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 44
+[28-Dec-2018 11:45:46 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getOfferPercentage() in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 44
+[28-Dec-2018 12:02:59 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/works/public_html/businessna1/application/controllers/Android/Android_cart.php on line 205
+[28-Dec-2018 15:44:42 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::get() in /home/works/public_html/businessna1/application/models/M_admin.php on line 426
+[29-Dec-2018 09:29:46 Asia/Kolkata] PHP Fatal error:  Call to a member function get_user() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Myaccount.php on line 21
+[29-Dec-2018 14:54:20 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/wishlist.php on line 85
+[29-Dec-2018 15:56:10 Asia/Kolkata] PHP Fatal error:  Call to a member function row() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Checkout.php on line 36
+[29-Dec-2018 16:21:18 Asia/Kolkata] PHP Fatal error:  Call to a member function row() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 38
+[29-Dec-2018 16:21:24 Asia/Kolkata] PHP Fatal error:  Call to a member function row() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 38
+[29-Dec-2018 16:21:28 Asia/Kolkata] PHP Fatal error:  Call to a member function row() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 38
+[31-Dec-2018 12:00:29 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductImage() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_GetProducts.php on line 19
+[01-Jan-2019 09:35:14 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_android::getMyOrders() in /home/works/public_html/businessna1/application/controllers/Android/Android_PlaceOrder.php on line 160
+[01-Jan-2019 09:46:13 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_android::getOrderProducts() in /home/works/public_html/businessna1/application/controllers/Android/Android_PlaceOrder.php on line 186
+[01-Jan-2019 16:51:04 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/works/public_html/businessna1/application/views/admin/view_orders.php on line 127
+[02-Jan-2019 12:12:51 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Vendor.php on line 34
+[02-Jan-2019 15:09:57 Asia/Kolkata] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::rows() in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 78
+[02-Jan-2019 15:11:38 Asia/Kolkata] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::rows() in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 78
+[04-Jan-2019 09:40:53 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 87
+[04-Jan-2019 11:01:41 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 87
+[04-Jan-2019 11:02:11 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 83
+[04-Jan-2019 11:02:33 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 87
+[04-Jan-2019 11:02:35 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 87
+[04-Jan-2019 11:08:03 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 81
+[04-Jan-2019 11:08:13 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 81
+[04-Jan-2019 11:09:05 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 86
+[04-Jan-2019 11:16:40 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on integer in /home/works/public_html/businessna1/application/views/site/cart.php on line 86
+[05-Jan-2019 09:48:24 Asia/Kolkata] PHP Fatal error:  Call to undefined method Common::updat() in /home/works/public_html/businessna1/application/controllers/Backend/Customers.php on line 102
+[05-Jan-2019 10:00:24 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getBlockedCustomers() in /home/works/public_html/businessna1/application/controllers/Backend/Customers.php on line 27
+[05-Jan-2019 10:01:36 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getBlockedCustomers() in /home/works/public_html/businessna1/application/controllers/Backend/Customers.php on line 27
+[05-Jan-2019 10:01:41 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getBlockedCustomers() in /home/works/public_html/businessna1/application/controllers/Backend/Customers.php on line 27
+[05-Jan-2019 10:04:55 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Customers::block() in /home/works/public_html/businessna1/application/controllers/Backend/Customers.php on line 97
+[05-Jan-2019 10:24:04 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getPlacedProducts() in /home/works/public_html/businessna1/application/models/M_admin.php on line 458
+[07-Jan-2019 11:29:31 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'empty' (T_EMPTY), expecting identifier (T_STRING) in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 216
+[07-Jan-2019 11:32:01 Asia/Kolkata] PHP Fatal error:  Cannot access empty property in /home/works/public_html/businessna1/application/views/site/cart.php on line 129
+[07-Jan-2019 11:56:21 Asia/Kolkata] PHP Fatal error:  Cannot access empty property in /home/works/public_html/businessna1/application/views/site/cart.php on line 129
+[07-Jan-2019 14:24:27 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '}' in /home/works/public_html/businessna1/application/views/site/buynow.php on line 186
+[07-Jan-2019 14:41:21 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/works/public_html/businessna1/application/views/site/buynow.php on line 477
+[08-Jan-2019 09:28:29 Asia/Kolkata] PHP Fatal error:  Call to a member function post() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Address.php on line 27
+[08-Jan-2019 09:32:39 Asia/Kolkata] PHP Fatal error:  Call to a member function post() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Address.php on line 27
+[08-Jan-2019 11:11:16 Asia/Kolkata] PHP Fatal error:  Call to a member function row() on array in /home/works/public_html/businessna1/application/controllers/Android/Android_Productreview.php on line 40
+[08-Jan-2019 11:23:53 Asia/Kolkata] PHP Fatal error:  Call to undefined method mysqli::row() in /home/works/public_html/businessna1/application/controllers/Android/Android_Productreview.php on line 43
+[08-Jan-2019 12:08:01 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/works/public_html/businessna1/application/controllers/Android/Android_Productreview.php on line 83
+[09-Jan-2019 11:17:43 Asia/Kolkata] PHP Fatal error:  Call to undefined method CI_Session::set_deliverydata() in /home/works/public_html/businessna1/application/controllers/Frontend/Delivery.php on line 29
+[09-Jan-2019 11:21:15 Asia/Kolkata] PHP Fatal error:  Call to undefined method CI_Session::set_deliverydata() in /home/works/public_html/businessna1/application/controllers/Frontend/Delivery.php on line 29
+[09-Jan-2019 15:46:38 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductNow() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Buynow.php on line 158
+[09-Jan-2019 15:48:58 Asia/Kolkata] PHP Fatal error:  Call to a member function update_stock() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Buynow.php on line 235
+[10-Jan-2019 10:26:04 Asia/Kolkata] PHP Fatal error:  Call to undefined method Checkout::getInvoiceNumber() in /home/works/public_html/businessna1/application/controllers/Frontend/Checkout.php on line 117
+[10-Jan-2019 10:28:29 Asia/Kolkata] PHP Fatal error:  Call to a member function update_stock() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Checkout.php on line 254
+[12-Jan-2019 15:22:44 Asia/Kolkata] PHP Fatal error:  Call to a member function getNewArrival() on null in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 38
+[12-Jan-2019 15:23:42 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductImage() on null in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 42
+[12-Jan-2019 15:23:44 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductImage() on null in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 42
+[12-Jan-2019 15:23:45 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductImage() on null in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 42
+[12-Jan-2019 15:23:45 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductImage() on null in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 42
+[12-Jan-2019 15:24:33 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getShop() in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 43
+[12-Jan-2019 16:59:47 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_android::getFeaturedProductsDetails() in /home/works/public_html/businessna1/application/models/M_android.php on line 380
+[14-Jan-2019 17:31:37 Asia/Kolkata] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::jon() in /home/works/public_html/businessna1/application/models/M_admin.php on line 230
+[15-Jan-2019 09:25:20 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '>' in /home/works/public_html/businessna1/application/views/site/site_product.php on line 143
+[15-Jan-2019 10:29:05 Asia/Kolkata] PHP Fatal error:  Call to a member function get_minprice() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_products.php on line 20
+[15-Jan-2019 11:11:45 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on null in /home/works/public_html/businessna1/application/views/site/cart.php on line 87
+[15-Jan-2019 11:12:22 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/works/public_html/businessna1/application/views/site/cart.php on line 439
+[15-Jan-2019 11:26:09 Asia/Kolkata] PHP Fatal error:  Can't use method return value in write context in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 24
+[15-Jan-2019 11:30:11 Asia/Kolkata] PHP Fatal error:  Can't use method return value in write context in /home/works/public_html/businessna1/application/controllers/Frontend/Cart.php on line 24
+[15-Jan-2019 11:34:38 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on null in /home/works/public_html/businessna1/application/views/site/cart.php on line 63
+[15-Jan-2019 11:34:39 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on null in /home/works/public_html/businessna1/application/views/site/cart.php on line 63
+[15-Jan-2019 12:37:45 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getMyOrders() in /home/works/public_html/businessna1/application/models/M_admin.php on line 587
+[15-Jan-2019 12:38:26 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getMyOrders() in /home/works/public_html/businessna1/application/models/M_admin.php on line 587
+[15-Jan-2019 12:38:27 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getMyOrders() in /home/works/public_html/businessna1/application/models/M_admin.php on line 587
+[15-Jan-2019 12:38:27 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getMyOrders() in /home/works/public_html/businessna1/application/models/M_admin.php on line 587
+[15-Jan-2019 12:38:27 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getMyOrders() in /home/works/public_html/businessna1/application/models/M_admin.php on line 587
+[15-Jan-2019 12:38:28 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getMyOrders() in /home/works/public_html/businessna1/application/models/M_admin.php on line 587
+[16-Jan-2019 17:37:56 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on null in /home/works/public_html/businessna1/application/views/site/cart.php on line 66
+[16-Jan-2019 17:50:11 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on array in /home/works/public_html/businessna1/application/views/site/cart.php on line 66
+[17-Jan-2019 11:19:22 Asia/Kolkata] PHP Fatal error:  Call to undefined method Android_PlaceOrder::get_details() in /home/works/public_html/businessna1/application/controllers/Android/Android_PlaceOrder.php on line 210
+[21-Jan-2019 09:18:44 Asia/Kolkata] PHP Fatal error:  Call to undefined method Android_vendorOtherProduct::get_details() in /home/works/public_html/businessna1/application/controllers/Android/Android_vendorOtherProduct.php on line 20
+[21-Jan-2019 09:19:32 Asia/Kolkata] PHP Fatal error:  Call to undefined method Android_vendorOtherProduct::get_details() in /home/works/public_html/businessna1/application/controllers/Android/Android_vendorOtherProduct.php on line 20
+[21-Jan-2019 09:20:38 Asia/Kolkata] PHP Fatal error:  Call to a member function get_details() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_vendorOtherProduct.php on line 20
+[21-Jan-2019 15:14:28 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/works/public_html/businessna1/application/controllers/Vendor/Product.php on line 59
+[24-Jan-2019 10:45:22 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home/works/public_html/businessna1/application/views/site/myorder.php on line 222
+[30-Jan-2019 09:04:31 Asia/Kolkata] PHP Fatal error:  Call to a member function getProductImage() on null in /home/works/public_html/businessna1/application/controllers/Android/Android_Featured.php on line 84
+[30-Jan-2019 09:05:06 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getFeaturedProductsDetails() in /home/works/public_html/businessna1/application/models/M_admin.php on line 670
+[30-Jan-2019 09:05:07 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getFeaturedProductsDetails() in /home/works/public_html/businessna1/application/models/M_admin.php on line 670
+[30-Jan-2019 09:05:36 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getFeaturedProductsDetails() in /home/works/public_html/businessna1/application/models/M_admin.php on line 670
+[30-Jan-2019 09:09:55 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getFeaturedProductsDetails() in /home/works/public_html/businessna1/application/models/M_admin.php on line 670
+[30-Jan-2019 09:24:26 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getFeaturedProductsDetails() in /home/works/public_html/businessna1/application/models/M_admin.php on line 670
+[30-Jan-2019 09:24:36 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::getFeaturedProductsDetails() in /home/works/public_html/businessna1/application/models/M_admin.php on line 670
+[01-Feb-2019 15:51:40 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$order' (T_VARIABLE) in /home/works/public_html/businessna1/application/controllers/Backend/Report.php on line 111
+[01-Feb-2019 15:52:14 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$order' (T_VARIABLE) in /home/works/public_html/businessna1/application/controllers/Backend/Report.php on line 111
+[02-Feb-2019 09:08:18 Asia/Kolkata] PHP Fatal error:  Cannot use [] for reading in /home/works/public_html/businessna1/application/controllers/Android/Android_products.php on line 56
+[02-Feb-2019 09:09:13 Asia/Kolkata] PHP Fatal error:  Cannot use [] for reading in /home/works/public_html/businessna1/application/controllers/Android/Android_products.php on line 56
+[02-Feb-2019 15:47:51 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_android::SearchShopDetails() in /home/works/public_html/businessna1/application/controllers/Android/Android_SearchShop.php on line 35
+[04-Feb-2019 18:58:42 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getFeaturedBrand() in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 90
+[04-Feb-2019 18:58:43 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getFeaturedBrand() in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 90
+[05-Feb-2019 08:47:55 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getFeaturedBrand() in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 90
+[05-Feb-2019 08:49:08 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::getFeaturedBrand() in /home/works/public_html/businessna1/application/controllers/Businessna.php on line 90
+[05-Feb-2019 09:42:31 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on null in /home/works/public_html/businessna1/application/controllers/Frontend/Products.php on line 103
+[05-Feb-2019 12:09:51 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/works/public_html/businessna1/application/views/site/cart.php on line 180
+[05-Feb-2019 12:10:13 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/works/public_html/businessna1/application/views/site/cart.php on line 180
+[07-Feb-2019 16:06:47 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '}' in /home/works/public_html/businessna1/application/views/site/shop.php on line 154
+[16-Feb-2019 13:56:53 Asia/Kolkata] PHP Fatal error:  Call to undefined method M_admin::get_deliveredProducts() in /home/works/public_html/businessna1/application/controllers/Backend/Wallets.php on line 20
+[20-Feb-2019 13:44:36 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '}' in /home/works/public_html/businessna/application/controllers/Frontend/Checkout.php on line 223
+[21-Feb-2019 13:53:55 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT), expecting identifier (T_STRING) in /home/works/public_html/businessna/application/controllers/Backend/Order.php on line 132
+[21-Feb-2019 16:38:45 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT), expecting identifier (T_STRING) in /home/works/public_html/businessna/application/controllers/Vendor/Orders.php on line 207
+[21-Feb-2019 16:38:47 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT), expecting identifier (T_STRING) in /home/works/public_html/businessna/application/controllers/Vendor/Orders.php on line 207
+[23-Feb-2019 11:48:20 Asia/Kolkata] PHP Fatal error:  Only variables can be passed by reference in /home/works/public_html/businessna/application/controllers/Frontend/Vendor.php on line 52
+[23-Feb-2019 11:48:22 Asia/Kolkata] PHP Fatal error:  Only variables can be passed by reference in /home/works/public_html/businessna/application/controllers/Frontend/Vendor.php on line 52
+[23-Feb-2019 11:48:23 Asia/Kolkata] PHP Fatal error:  Only variables can be passed by reference in /home/works/public_html/businessna/application/controllers/Frontend/Vendor.php on line 52
+[23-Feb-2019 11:48:24 Asia/Kolkata] PHP Fatal error:  Only variables can be passed by reference in /home/works/public_html/businessna/application/controllers/Frontend/Vendor.php on line 52
+[25-Feb-2019 12:39:20 Asia/Kolkata] PHP Fatal error:  Call to a member function num_rows() on null in /home/works/public_html/businessna/application/views/site/myaccount.php on line 60
+[25-Feb-2019 14:42:03 Asia/Kolkata] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::mysql_insert_id() in /home/works/public_html/businessna/application/controllers/Android/Android_Shopchat.php on line 43
+[05-Mar-2019 10:06:29 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:06:57 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:06:59 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:07:33 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:07:34 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:07:35 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:09:06 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:09:07 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:09:09 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:09:09 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:09:40 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:09:41 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:09:42 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 59
+[05-Mar-2019 10:12:57 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 69
+[05-Mar-2019 10:12:58 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 69
+[05-Mar-2019 10:13:33 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Item.php on line 75
+[05-Mar-2019 10:21:08 Asia/Kolkata] PHP Fatal error:  Cannot redeclare M_admin::get_commission() in /home/works/public_html/businessna/application/models/M_admin.php on line 831
+[05-Mar-2019 11:27:31 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Vendor.php on line 29
+[05-Mar-2019 13:29:27 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Vendor.php on line 113
+[06-Mar-2019 09:40:44 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Products.php on line 35
+[06-Mar-2019 10:43:18 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Wishlist.php on line 39
+[06-Mar-2019 11:06:57 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Cart.php on line 41
+[06-Mar-2019 11:23:50 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Checkout.php on line 35
+[06-Mar-2019 12:03:01 Asia/Kolkata] PHP Fatal error:  Unsupported operand types in /home/works/public_html/businessna/application/controllers/Frontend/Myaccount.php on line 41
+[07-Mar-2019 16:21:38 Asia/Kolkata] PHP Fatal error:  Class 'Mpdf\Mpdf' not found in /home/works/public_html/businessna/application/controllers/Frontend/Orders.php on line 190
+[14-Mar-2019 09:04:45 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'info' (T_STRING) in /home/works/public_html/ajishma/application/controllers/Frontend/Contact.php on line 53
+[26-Mar-2019 15:50:06 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Contact::test() in /home/ajishma/public_html/application/controllers/Frontend/Contact.php on line 85
+[12-Apr-2019 09:24:10 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/ajishma/public_html/\vendor\Mailin.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajishma/public_html/application/controllers/Frontend/Contact.php on line 82
+[12-Apr-2019 09:30:38 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/ajishma/public_html/\vendor\Mailin.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ajishma/public_html/application/controllers/Frontend/Contact.php on line 82
