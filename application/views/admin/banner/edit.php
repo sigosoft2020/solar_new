@@ -47,6 +47,13 @@
                                           </div>
                                           <br>
                                           <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Product ID</label>
+                                              <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="number" min="0" value="<?=$banner->product_id?>" name="product_id" class="form-control" placeholder="Product ID" required>
+                                              </div>
+                                          </div>
+                                          <br>
+                                          <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Image</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                               <input type="file" class="form-control" placeholder="Default Input" id="upload">

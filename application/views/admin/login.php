@@ -31,7 +31,7 @@
         <div class="animate form login_form">
           <section class="login_content">
             <form class="form-horizontal" method="POST" action="<?=site_url('login/check')?>" novalidate>
-              <h1 style="color: #ffa64d">Login Form</h1>
+              <h1 style="color: #ffa64d">Admin Login</h1>
               <div>
                 <input type="text" name="username" class="form-control" placeholder="Username" required="" />
               </div>

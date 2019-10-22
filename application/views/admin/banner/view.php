@@ -58,6 +58,7 @@
                       <thead>
                         <tr>
                           <th width="10%" style="border-color: #ff6600;">Title</th>
+                          <th width="10%" style="border-color: #ff6600;">Product ID</th>
                           <th width="20%" style="border-color: #ff6600;">Image</th>
                           <th width="5%" style="border-color: #ff6600;">Status</th>
                           <th width="2%" style="border-color: #ff6600;">Edit</th>

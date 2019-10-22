@@ -26,6 +26,7 @@ class Banners extends CI_Controller {
 		foreach ($result as $res) {
 			$sub_array = array();
 			$sub_array[] = $res->banner_title;
+			$sub_array[] = $res->product_id;
 			$sub_array[] = '<img src="' . base_url() . $res->banner_image . '" height="100px">';
 			$sub_array[] = $res->banner_status;
 			$sub_array[] = '<a class="btn btn-link" style="font-size:24px;color:orange" href="' . site_url('admin/banners/edit/'.$res->banner_id) . '"><i class="fa fa-pencil"></i></a>';
@@ -47,14 +48,15 @@ class Banners extends CI_Controller {
 		$this->load->view('admin/banner/add');
 	}
 
-	public function insert_data()
+    public function insert_data()
 	{   
 		date_default_timezone_set('Asia/Kolkata');
         $current = date('Y-m-d H:i:s');
 
-	    $title  = $this->security->xss_clean($this->input->post('title'));
-		$image  = $this->input->post('image');
-		$img    = substr($image, strpos($image, ",") + 1);
+	    $title       = $this->security->xss_clean($this->input->post('title'));
+	    $product_id  = $this->security->xss_clean($this->input->post('product_id'));
+		$image       = $this->input->post('image');
+		$img         = substr($image, strpos($image, ",") + 1);
 
 		$url      = FCPATH.'uploads/banner/';
 		$rand     = $title.date('Ymd').mt_rand(1001,9999);
@@ -62,7 +64,7 @@ class Banners extends CI_Controller {
 		$path     = "uploads/banner/".$rand.'.png';
 		file_put_contents($userpath,base64_decode($img));
 		
-        $banner_check = $this->Common->get_details('banners',array('banner_title'=>$title));
+        $banner_check = $this->Common->get_details('banners',array('banner_title'=>$title,'product_id'=>$product_id));
         if($banner_check->num_rows()>0)
         {
             $this->session->set_flashdata('add_error', 'failed');
@@ -72,6 +74,7 @@ class Banners extends CI_Controller {
         {
 		    $array['banner_title']        = $title;
 			$array['banner_image']        = $path;
+			$array['product_id']          = $product_id;
 			$array['timestamp']           = $current;
 			$array['banner_status']       = 'Active';
 			if($this->Common->insert('banners',$array))
@@ -80,8 +83,7 @@ class Banners extends CI_Controller {
 			    redirect('admin/banners');
 			}
 			else 
-			{
-				
+			{				
 				$this->session->set_flashdata('error', 'Failed to add banner..!');
 				redirect('admin/banners/add');
 			}	
@@ -90,10 +92,8 @@ class Banners extends CI_Controller {
 
 	public function edit($id)
 	{
-
 		$banner_details = $this->Common->get_details('banners',array('banner_id'=>$id))->row();
 		$data['banner']   = $banner_details;
-
 
 		$this->load->view('admin/banner/edit',$data);
 	}
@@ -104,6 +104,7 @@ class Banners extends CI_Controller {
         $current = date('Y-m-d H:i:s');
         
         $banner_id   = $this->security->xss_clean($this->input->post('banner_id'));
+        $product_id  = $this->security->xss_clean($this->input->post('product_id'));
 	    $title       = $this->security->xss_clean($this->input->post('title'));
 	    $status      = $this->security->xss_clean($this->input->post('status'));
 		$image       = $this->input->post('image');
@@ -124,11 +125,13 @@ class Banners extends CI_Controller {
 				unlink($remove_path);
 
 				$banner_array['banner_title']        = $title;
+				$banner_array['product_id']          = $product_id;
 				$banner_array['banner_image']        = $path;
 				$banner_array['banner_status']       = $status;
 			}
 			else 
-			{
+			{  
+			    $banner_array['product_id']          = $product_id;
 				$banner_array['banner_title']        = $title;
 				$banner_array['banner_status']       = $status;
 			}

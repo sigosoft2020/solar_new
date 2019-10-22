@@ -19,7 +19,7 @@ class Banner_model extends CI_Model
   function make_query()
   {
     $table         = "banners";
-    $select_column = array("banner_id","banner_title","banner_status","banner_image");
+    $select_column = array("banner_id","banner_title","banner_status","banner_image","product_id");
     $order_column  = array(null,"banner_title",null,null);
 
     $this->db->select($select_column);

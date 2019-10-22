@@ -9,7 +9,7 @@ class Android_model extends CI_Model
   
   function get_banners()
   {
-    $this->db->select('banner_id,banner_title,banner_image');
+    $this->db->select('banner_id,banner_title,banner_image,product_id');
     $this->db->from('banners');
     $this->db->where('banner_status','Active');
     $this->db->order_by('banner_id',"desc");
@@ -147,6 +147,14 @@ class Android_model extends CI_Model
     $this->db->from('news');
     $this->db->where('news_id',$news_id);
     $this->db->where('status','Active');
+    return $this->db->get()->result();
+  }
+  
+  public function get_news_comments($id)
+  {
+    $this->db->select('comment_id,news_id,user_id,user_name,comments,date,time');
+    $this->db->from('news_comments');
+    $this->db->where('news_id',$id);
     return $this->db->get()->result();
   }
   

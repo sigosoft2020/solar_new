@@ -35,12 +35,19 @@
                     <br />
                       <form class="form form-horizontal" method="POST" action="<?=site_url('admin/banners/insert_data')?>" enctype="multipart/form-data">
                                <div class="row">
-                                  <div class="col-md-4">
+                                  <div class="col-md-5">
                                       <div class="">
                                          <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Title</label>
                                               <div class="col-md-9 col-sm-9 col-xs-12">
                                                 <input type="text" name="title" class="form-control" placeholder="Banner Title" maxlength="100" required>
+                                              </div>
+                                          </div>
+                                          <br>
+                                          <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Product ID</label>
+                                              <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="number" min="0" name="product_id" class="form-control" placeholder="Product ID" required>
                                               </div>
                                           </div>
                                           <br>
@@ -53,7 +60,7 @@
                                       </div>
                                     </div>
 
-                                    <div class="col-md-8">     
+                                    <div class="col-md-7">     
                                        
                                       <div class="upload-div" style="display:none;">
                                         <div id="upload-demo"></div>
