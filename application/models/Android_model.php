@@ -158,6 +158,16 @@ class Android_model extends CI_Model
     return $this->db->get()->result();
   }
   
+  function get_messages($customer_id,$limit)
+  {
+    $this->db->select('ud_id,user_name,question,answer,qs_date,ans_date');
+    $this->db->from('user_doubts');
+    $this->db->where('user_id',$customer_id);
+    $this->db->order_by('ud_id','desc');
+    $this->db->limit($limit);
+    return $this->db->get()->result();
+  }
+  
 }
 
 ?>
