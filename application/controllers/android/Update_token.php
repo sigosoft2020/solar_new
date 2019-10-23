@@ -24,7 +24,7 @@ class Update_token extends CI_Controller {
 	   {
     	       $array    =[
                              'user_id'          => $customer_id,
-                             'fcm'              => $fcm
+                             'device_token'     => $fcm
                           ];
     	                      
          if($this->Common->update('user_id',$customer_id,'user_fcm',$array))  

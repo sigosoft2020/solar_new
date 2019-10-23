@@ -38,7 +38,7 @@ class Doubts extends CI_Controller {
          {
               $token    =[
                                  'user_id'          => $customer_id,
-                                 'fcm'              => $fcm
+                                 'device_token'     => $fcm
                            ]; 
                 $this->Common->update('user_id',$customer_id,'user_fcm',$token);
          }
