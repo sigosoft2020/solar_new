@@ -60,7 +60,54 @@ class Chat_model extends CI_Model
     $this->db->select("*");
     $this->db->from("user_doubts");
     return $this->db->count_all_results();
-  }	
+  }
+
+ function select_user()
+  {
+    $this->db->select('*');
+    $this->db->from('messages');
+    $this->db->group_by('user_id');
+    $this->db->order_by('message_id',"DESC");
+    return $this->db->get()->result();
+  }
+  
+  function get_lastdata($id)
+  {
+    $this->db->select("*");
+    $this->db->from("messages");
+    $this->db->where('user_id',$id);
+    $this->db->limit(1);
+    $this->db->order_by('message_id',"DESC");
+    $query = $this->db->get();
+    if($query->num_rows()>0)
+    {
+      return $query->row();
+    }
+    else
+    {
+      return false;
+    }
+  }
+
+  function get_messages($id)
+  {
+    $this->db->select('*');
+    $this->db->from('messages');
+    $this->db->where('user_id',$id);
+    $this->db->order_by('message_id',"ASC");
+    return $this->db->get()->result();
+  }
+
+  function get_unread($id)
+  {
+    $this->db->select('*');
+    $this->db->from('messages');
+    $this->db->where('user_id',$id);
+    $this->db->where('status','unread');
+    $this->db->where('user_type','customer');
+    return $this->db->get()->num_rows();
+  }
+
 }
 
 ?>

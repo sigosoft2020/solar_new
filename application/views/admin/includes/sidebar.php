@@ -73,7 +73,7 @@
                       <a href="<?=site_url('admin/feedback')?>"><i class="fa fa-comments-o"></i> Feedback</a>
                   </li>
                   <li>
-                      <a href="<?=site_url('admin/chats')?>"><i class="fa fa-commenting-o"></i> User Doubts</a>
+                      <a href="<?=site_url('admin/chats')?>"><i class="fa fa-commenting-o"></i> Chats</a>
                   </li>
                   <!-- <li><a><i class="fa fa-envelope"></i>SMS Gateway <span class="fa fa-chevron-down"></span></a>-->
                   <!--  <ul class="nav child_menu">-->

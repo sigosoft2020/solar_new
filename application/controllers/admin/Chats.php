@@ -14,72 +14,89 @@ class Chats extends CI_Controller {
 	}
 	public function index()
 	{      
-        // $enquiries         = $this->enquiry->get_enquiries(); 
-        // $data['enquiries'] = $enquiries;
-		$this->load->view('admin/chat/view');
+        $users = $this->chat->select_user();
+        foreach($users as $user)
+        {   
+        	$last            = $this->chat->get_lastdata($user->user_id);
+        	$user->last_mssg = $last->message;
+        	$user->last_time = $last->time;
+        	$user->unread    = $this->chat->get_unread($user->user_id);
+        	$user->messages  = $this->chat->get_messages($user->user_id);
+        }
+        // print_r($user);
+        $data['users'] = $users;
+		$this->load->view('admin/chat/view',$data);
 	}
 
-	public function get()
-	{
-		$result = $this->chat->make_datatables();
-		$data = array();
-		foreach ($result as $res) {
-           if($res->answer=='')
-            {
-              $status = 'Not answered';
-              $answer = '<button type="button" class="btn btn-success" onclick="add(' . $res->ud_id . ',`' . $res->question . '`)"><i class="fa fa-plus"></i></button>';	
-            }
-            else
-            {
-             $status = 'Answered';    
-             $answer = '<button type="button" class="btn btn-success" onclick="edit(' . $res->ud_id . ',`'.$res->answer .'`,`' . $res->question .'`)"><i class="fa fa-edit"></i></button>';
-            }
-            
-            
-			$sub_array = array();
-			$sub_array[] = $res->user_name;
-			$sub_array[] = $res->question;
-			$sub_array[] = $status;
-		    $sub_array[] = $answer;
-
-			$data[] = $sub_array;
-		}
-
-		$output = array(
-			"draw"   => intval($_POST['draw']),
-			"recordsTotal" => $this->chat->get_all_data(),
-			"recordsFiltered" => $this->chat->get_filtered_data(),
-			"data" => $data
-		);
-		echo json_encode($output);
-	}
-
-
-	public function add_answer()
+	public function addchat()
 	{   
 		date_default_timezone_set('Asia/Kolkata');
         $current = date('Y-m-d H:i:s');
+        $date    = date('Y-m-d');
+        $time    = date('h:i A');
 
-		$question_id   = $this->security->xss_clean($this->input->post('qs_id'));
-		$answer         = $this->security->xss_clean($this->input->post('answer'));
+		$user_id     = $this->security->xss_clean($this->input->post('user_id'));
+		$message     = $this->security->xss_clean($this->input->post('message'));
 
-        $res['answer']       = $answer;
-        $res['ans_date']     = $current;
-		if($this->Common->update('ud_id',$question_id,'user_doubts',$res))
+        $array       = [
+        	             'user_id'  => $user_id,
+        	             'message'  => $message,
+        	             'user_type'=> 'admin',
+        	             'date'     => $date,
+        	             'time'     => $time,
+        	             'timestamp'=> $timestamp
+                       ];
+		if($this->Common->insert('messages',$array))
 	     {  
-	        $user_id    = $this->Common->get_details('user_doubts',array('ud_id'=>$question_id))->row()->user_id; 
 	        $fcm_check  = $this->Common->get_details('user_fcm',array('user_id'=>$user_id));
-	        if($fcm_check->num_rows()>0)
+	          if($fcm_check->num_rows()>0)
 	        {
 	            $device_token = $fcm_check->row()->device_token;
+	            
+	            $SERVER_API_KEY = "AAAA5hmcrBM:APA91bH9i1_kd0bM_Z17Ioy-w2FHA1anquuNf7NubJJ3UvD3Z8tGEItyS2pdSKg5fV2LSkuvEGWGwnqk6kpyxyOObQ9PHxIWZ45KPbfeJXwj-ATfCkWGW2OqKPbiLKLJJ3Bu0NDbvaC4";
+            	$header = [
+            		'Authorization: key='. $SERVER_API_KEY,
+            		'Content-Type: Application/json'
+            	];
+            	$msg = [
+            		'title' => 'New message',
+            		'body'  => 'You have an new message'
+            	];
+            	
+            	$notification = [
+                            		'title'             => 'New message',
+                            		'body'              => 'You have a new message',
+                            		'content_available' => true
+                            	];
+            	
+            	$payload = [
+                        		'data'         => $msg,
+                        		'notification' => $notification,
+                        		'to'           => $device_token,
+                        		'priority'     => 10
+                        	];
+            	$url = 'https://fcm.googleapis.com/fcm/send';
+            
+            	$curl = curl_init();
+            
+            	curl_setopt_array($curl, array(
+            		 CURLOPT_URL            => "https://fcm.googleapis.com/fcm/send",
+            		 CURLOPT_RETURNTRANSFER => true,
+            		 CURLOPT_CUSTOMREQUEST  => "POST",
+            		 CURLOPT_POSTFIELDS     => json_encode($payload),
+            		 CURLOPT_HTTPHEADER     => $header,
+            	));
+            
+            	$response = curl_exec($curl);
+            	$err = curl_error($curl);
+            
+            	curl_close($curl);
+                
+                // return true;
 	        }
-	        else
-	        {
-	            $device_token = '';
-	        }
-	        $this->send_notification($device_token);
 	        
-			$this->session->set_flashdata('message', 'Answer added successfully');
+	        
+			$this->session->set_flashdata('message', 'message sent successfully');
 			redirect('admin/chats');
 	     }	
 	     else 
@@ -89,17 +106,18 @@ class Chats extends CI_Controller {
 		}	
 	}
 	
-	public function edit_answer()
+	public function status_change()
 	{   
 		date_default_timezone_set('Asia/Kolkata');
         $current = date('Y-m-d H:i:s');
 
-		$question_id    = $this->security->xss_clean($this->input->post('qst_id'));
-		$answer         = $this->security->xss_clean($this->input->post('ans'));
+		$user_id    = $this->security->xss_clean($this->input->post('user_id'));
+		
+        $sts        = [
+        	            'status'  => 'read'
+                      ];
 
-        $ans['answer']       = $answer;
-        $ans['ans_date']     = $current;
-		if($this->Common->update('ud_id',$question_id,'user_doubts',$ans))
+		if($this->Common->update('user_id',$user_id,'messages',$sts))
 	     {
 			$this->session->set_flashdata('message', 'Answer edited successfully');
 			redirect('admin/chats');
